@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Start</title>
+	<title>Cahee</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,22 +12,90 @@
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Raleway:300,700,900' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-</head>
-<body>
-	<header class="ba-header">
+		<![endif]-->
+	</head>
+	<body>
+		<div class="ba-fresh">
+			<div class="ba-container">
+				<header class="ba-header cf">
+					<div class="ba-logo ba-float-left">
+						<img src="img/logo.png" alt="Cahee">
+					</div>
+					<nav class="ba-float-right">
+						<ul class="ba-menu">
+							<li class="ba-active"><a href="#">HOME</a></li>
+							<li><a href="#raspberries">ABOUT</a></li>
+							<li><a href="#services">SERVICES</a></li>
+							<li><a href="#">GALLERY</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">CONTACT</a></li>
+						</ul>
+					</nav>
+					<div class="ba-banner">
+						<h2 class="ba-banner__title">Fresh Life</h2>
+						<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+						<a class="ba-button" href="#">Get Free now</a>
+					</div>
+					<a href="#raspberries"><img class="ba-scroll" src="img/scroll.png" alt=""></a>
+				</header>
+			</div>
+		</div>
 
-	</header>
-	<main role="main" >
+		<main role="main" >
 
-	</main>
-	<footer class="ba-footer">
+			<section id="raspberries" class="ba-raspberries cf">
+				<div class="ba-container">
+					<div class="ba-grid">
+						<div class="ba-width-1-2">
+							<img class="ba-raspberries__img" src="img/raspberries.png" alt="raspberries">
+						</div>
+						<div class="ba-width-1-2">
+							<div class="ba-raspberries__about-us">
+								<h2 class="ba-raspberries__title">About Us
+								</h2>
+								<p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+								</p>
+								<p>Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-	</footer>
-	<script src="js/main.js"></script>
-</body>
-</html>
+			<section>
+				<div id="services" class="ba-services">
+					<div class="ba-container">
+						<div class="ba-grid">
+							<div class="ba-width-1-2">
+								<ul class="ba-services__list">
+									<li><h3 class="ba-services__h3">Online Shopping</h3><img class="ba-services__img" src="img/icon/icon-cart.svg" alt=""></li>
+									<li><h3 class="ba-services__h3">Quality Product</h3><img class="ba-services__img" src="img/icon/icon-quality.svg" alt=""></li>
+									<li><h3 class="ba-services__h3 ba-service--height">Domestic & International<br>Delivery</h3><img class="ba-services__img" src="img/icon/icon-global.svg" alt=""></li>
+									<li><h3 class="ba-services__h3">Well Organized</h3><img class="ba-services__img" src="img/icon/icon-carrot.svg" alt=""></li>
+								</ul>
+							</div>
+							<div class="ba-width-1-2">
+								<div class="ba-services__tomato">
+									<img src="img/tomato.png" alt="tomato">
+									<h2 class="ba-services__tittle">Our Services
+									</h2>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="ba-footer">
+
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
