@@ -121,7 +121,7 @@ img {
 }
 
 .ba-grid + .ba-grid {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 [class*="ba-width-"] {
@@ -130,11 +130,11 @@ img {
 
 .ba-grid > [class*="ba-width-"] {
     float: left;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .ba-grid {
-    margin-left: -30px;
+    margin-left: -20px;
 }
 
 
