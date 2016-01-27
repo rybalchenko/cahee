@@ -41,6 +41,14 @@ button:hover,
 	background-color: #e64214;
 }
 
+
+.ba-button:active {
+	position: relative;
+	top: 1px;
+}
+
+box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -163,7 +171,7 @@ textarea {
 }
 
 /*section raspberies*/
-.ba-raspberries {
+.ba-about {
 	padding: 85px 0 20px;
 	color: #FFF;
 	background-color: #00c4c4;
@@ -174,78 +182,44 @@ textarea {
 	background: radial-gradient(circle farthest-side at 50%, rgba(0, 196, 196, 0.9) 0%, rgba(0, 183, 183, 0.9) 31%, rgba(0, 173, 173, 0.9) 67%, rgba(0, 156, 156, 0.9) 100%);
 }
 
-.ba-raspberries__img {
+.ba-about__img {
 	max-width: none;
 	display: block;
 	height: auto;
-    margin: 0 -55px;
+	margin: 0 -55px;
 }
 
-.ba-raspberries__about-us {
+.ba-about__us {
 	padding: 64px 0 0 67px;
 }
 
-.ba-raspberries__title {
+.ba-about__title {
 	font-size: 90px;
 	color: #FFF;
 	line-height: 1;
 	margin-bottom: -5px;
 }
 
-.ba-raspberries p {
+.ba-about p {
 	color: #FFF;
+}
+
+@media (max-width: 959px) {
+	.ba-about__img {
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+	.ba-about__us {
+		padding: 0 20px;
+		margin: 0;
+	}
 }
 
 /*section ba-services tomato*/
 .ba-services {
 	background-color: #70bfff;
-}
-
-.ba-services__list {
-	padding: 139px 0 120px 92px;
-}
-
-.ba-services__list li {
-	background-color: #ffffff;
-	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
-	width: 400px;
-	height: 100px;
-	list-style: none;
-	margin-bottom: 20px;
-	font-weight: bold;
-	position: relative;
-	text-align: center;
-	line-height: 100px;
-}
-
-.ba-services__icon {
-	width: 47px;
-	height: 44px;
-	position: absolute;
-	right: 30px;
-	top: 30px;
-}
-
-.ba-services__h3 {
-	padding-right: 100px;
-	position: relative;
-	font-size: 20px;
-}
-
-.ba-service__h3--height {
-	line-height: 1.3;
-	padding-top: 20px;
-}
-
-.ba-services__h3:after {
-	display: block;
-	content: '';
-	height: 100px;
-	right: 100px;
-	top: 0;
-	position: absolute;
-	background-color: #9d9d9d;
-	width: 1px;
+	padding: 10px 0 60px 7px;
 }
 
 .ba-services__tittle {
@@ -260,16 +234,70 @@ textarea {
 	width: 100%;
 }
 
+.ba-services__list {
+	padding: 175px 0 30px 92px;
+	font-size: 0;
+}
+
+.ba-services__list li {
+	background-color: #ffffff;
+	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 100px;
+	list-style: none;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.ba-services__icon {
+	width: 100px;
+	min-height: 100px;
+	border-left: 1px solid #9D9D9D;
+	display: inline-block;
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.ba-services__h3 {
+	width: calc(100% - 100px);
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0;
+	text-align: center;
+	line-height: 1.3;
+	padding: 0 30px;
+}
+
+.ba-services__icon--cart {
+	background-image: url(../img/icon/icon-cart.svg);
+}
+
+.ba-services__icon--quality {
+	background-image: url(../img/icon/icon-quality.svg);
+}
+
+.ba-services__icon--globe {
+	background-image: url(../img/icon/icon-global.svg);
+}
+
+.ba-services__icon--carrot {
+	background-image: url(../img/icon/icon-carrot.svg);
+}
+
 /*ba-gallery*/
 
 .ba-gallery {
 	background-color:  #ffe92f;
-	padding: 13px 0 217px;
-	position: relative;
+	padding: 13px 0 120px;
+	text-align: center;
 }
 
 .ba-gallery img {
-	box-shadow: 0 4px 10px #000000;
+	background-color: #00c4c4;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .ba-gallery h2 {
@@ -292,16 +320,15 @@ textarea {
 
 .ba-button--gallery {
 	background-color: #5585a2;
-	position: absolute;
-	left: 50%;
 	bottom: 120px;
-	margin-left: -100px;
-	padding: 0 45px;
+	margin-top: 35px;
+	padding: 0 42px;
+	text-align: center;
 }
 /*ba-subscribe__bg */
 .ba-subscribe {
-	background: #FFF url(../img/bg_subscribe.jpg) no-repeat 50% 50%;
-	padding: 120px 0 144px;
+	background: #FFF url(../img/bg_subscribe.jpg) no-repeat 50%;
+	padding: 120px 0 150px;
 }
 
 .ba-subscribe__form {
@@ -334,13 +361,18 @@ textarea {
 
 .ba-blog {
 	background-color:  #b07cf7;
-	padding: 10px 0 220px;
+	padding: 1px 0 120px;
 	color: #ffffff;
-	position: relative;
+	text-align: center;
 }
 
 .ba-blog img {
 	box-shadow: 0 4px 10px #000000;
+}
+
+.ba-blog a {
+	text-decoration: none;
+	color: #FFF;
 }
 
 .ba-blog h2 {
@@ -356,6 +388,7 @@ textarea {
 
 .ba-blog__image {
 	position: relative;
+	display: block;
 }
 
 .ba-blog__date {
@@ -383,8 +416,11 @@ textarea {
 
 .ba-blog__thema {
 	position: absolute;
-	left: 20px;
-	bottom: 25px;
+	background-image: linear-gradient(rgba(38,38,38,0), rgba(38,38,38,0.9));
+	padding: 46px 15px 30px;
+	left: 0px;
+	bottom: 0px;
+	right: 0;
 }
 
 .ba-blog__thema h4 {
@@ -399,18 +435,23 @@ textarea {
 }
 
 .ba-button--blog {
-	position: absolute;
-	left: 50%;
 	padding: 0 45px;
-	bottom: 120px;
-	margin-left: -95px;
+	margin-top: 50px;
 	background-color: #f72b3b;
+}
+
+
+@media (max-width: 959px) {
+	.ba-blog__image {
+		width: 100%;
+		text-align: left;
+	}
 }
 
 /*ba-contact*/
 .ba-contact {
-	background: #FFF url(../img/contacts.jpg) no-repeat 50% 50%;
-	padding: 40px 0 40px;
+	background: #FFF url(../img/contacts.jpg) no-repeat 50%;
+	padding: 40px 0;
 	text-align: center;
 }
 
@@ -434,25 +475,31 @@ textarea {
 	margin-left: -50px;
 }
 
-.ba-field {
+.ba-contact textarea, .ba-field {
 	background-color: #00c4c4;
+	opacity: .5;
 	border: none;
+	color: #ffffff;
 	width: 500px;
 	height: 50px;
 	margin-bottom: 15px;
 	padding-left: 10px;
-	color: #ffffff;
-}
-
-.ba-contact__active {
-	border-left: 5px solid #355b82;
 }
 
 .ba-contact textarea {
-	background-color: rgba(0, 196, 196, 0.5);
-	color: #fff;
-	padding: 8px;
+	height: 230px;
 }
+
+.ba-contact textarea:focus, .ba-field:focus {
+	border-left: 5px solid #355b82;
+	opacity: 1;
+	font-weight: 700;
+}
+
+.ba-contact input::-webkit-input-placeholder {color:#fff}
+.ba-contact input:-moz-placeholder {color:#fff}
+.ba-contact textarea::-webkit-input-placeholder {color:#fff}
+.ba-contact textarea:-moz-placeholder {color:#fff}
 
 .ba-contact__address {
 	margin-left: 75px;
@@ -482,28 +529,24 @@ textarea {
 .ba-contact__address a {
 	text-decoration: none;
 	color: #262626;
-
 }
 
 /*footer*/
 .ba-footer {
-	background: #FFF url(../img/footer.jpg) no-repeat 50% 50%;
-	padding: 10px 0;
+	background: #FFF url(../img/footer.jpg) no-repeat 50%;
+	padding: 20px 0;
 	color: #b9b9b9;
 	line-height: 16px;
+}
+
+.ba-footer img {
+	display: block;
+	margin: 8px auto 0;
 }
 
 .ba-footer__copiright {
 	font-size: 16px;
 	font-weight: 300;
-	line-height: 25px;
-}
-
-.ba-footer__cahee {
-	font-family: Pacifico;
-	font-size: 25px;
-	font-weight: 400;
-	text-align: center;
 }
 
 .ba-footer__made {
